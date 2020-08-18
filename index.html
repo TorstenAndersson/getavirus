@@ -2,10 +2,54 @@
 <html>
 <head>
 </head>
-<body>
+<body style="margin: 0px;">
+
+<div style="background: rgba(0, 0, 0, .3); padding-bottom: 20px;">
+<h1 style="padding-left: 10px; font-family: Calibri; padding-top: 20px; display: inline-block; margin-top: -0px;">GetAVirus.com</h1>
+
+</div>
+
+<div style="background: rgba(0, 0, 0, .1); padding-left: 40px; padding-top: 40px;">
+<div style="border: 0.5mm solid rgba(0, 0, 0, .5); width: 760px; background: rgba(0, 0, 0, .1);">
+<h1 style="padding-left: 20px; font-family: Calibri; display: inline-block;">The Fuck Your Computer Virus</h1>
+<button style="background-color: rgba(0,0,0,.78); border: none; height: 50px; width: 150px; cursor: pointer; color: white; font-family: Calibri; font-size: 20px; display; inline-block; position: relative; right: -180px;">Download</button>
+<h3 style="font-family: Calibri; text-align: right; padding-left: 10px; display: inline-block;">Ett excellent virus att börja din resa på!</h3>
+<img src="C:\Users\Micke\Pictures\Johan%20Nervös.png" style="width: 60%; display: inline-block; margin-left: 300px;">
+<h2 id="counter" style="font-family: Calibri; width: 100%; text-align: center;">0</h2>
+</div>
+</div>
+
+<div style="background: rgba(0, 0, 0, .1); padding-left: 600px; padding-top: 40px; padding-bottom: 40px;">
+<div style="border: 0.5mm solid rgba(0, 0, 0, .5); width: 760px; margin-top: -2px; background: rgba(0, 0, 0, .1);">
+<h1 style="padding-left: 20px; font-family: Calibri; display: inline-block;">For The Big Boys Virus</h1>
+<button style="background-color: rgba(0,0,0,.78); border: none; height: 50px; width: 150px; cursor: pointer; color: white; font-family: Calibri; font-size: 20px; display; inline-block; position: relative; right: -285px;">Download</button>
+<h3 style="font-family: Calibri; text-align: right; padding-right: 40px;">Har du passerat ditt förra virus och letar efter <br>
+något mer sofistikerat?</h3>
+<img src="C:\Users\Micke\Pictures\Johan%20Nervös.png" style="width: 60%;">
+<h2 id="counter2" style="font-family: Calibri; width: 100%; text-align: center;">0</h2>
+</div>
+</div>
+
+
 <script>
-window.location.href = "testing.php"
+var start = new Date( "August 18, 2020 00:00:00" );
+var startValue = start.getTime();
+
+count = document.getElementById("counter");
+count2 = document.getElementById("counter2");
+count.innerHTML = "Downloads: " + Math.round((Date.now() - startValue)/100)
+count2.innerHTML = "Downloads: " + Math.round((Date.now() - startValue)/3574)
+
+test();
+
+function test() {
+if ((Date.now() - startValue)/100 == Math.round(Date.now() - startValue)/100){
+count.innerHTML = "Downloads: " + Math.round((Date.now() - startValue)/100)
+count2.innerHTML = "Downloads: " + Math.round((Date.now() - startValue)/3574)
+}
+setTimeout(function(){ test()}, 100);
+}
+
 </script>
-<h1 style="width: 100%; text-align: center;">HAHA SCAMMED!!</h1>
 </body>
 </html>
